@@ -169,9 +169,9 @@ hr.small {
     padding: 50px 0;
 }
 
-/* Services */
+/* organizers */
 
-.services {
+.organizers {
     padding: 50px 0;
 }
 
@@ -246,3 +246,411 @@ footer {
 
 .btn-equal-padding{padding: 6px 6px;}
 .call-to-action-meetup{width:120px; height: 110px; }
+
+/* cookies */
+
+.tap-target-wrapper {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    -webkit-transition: visibility 0s .3s;
+    transition: visibility 0s .3s;
+    align-items: right;
+  }
+  
+  .tap-target-wrapper.open {
+    visibility: visible;
+    -webkit-transition: visibility 0s;
+    transition: visibility 0s;
+  }
+  
+  .tap-target-wrapper.open .tap-target {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: .95;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+  .tap-target-wrapper.open .tap-target-wave::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  
+  }
+  
+  .tap-target-wrapper.open .tap-target-wave::after {
+    visibility: visible;
+    -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    -webkit-transition: opacity .3s,
+   visibility 0s 1s,
+   -webkit-transform .3s;
+    transition: opacity .3s,
+   visibility 0s 1s,
+   -webkit-transform .3s;
+    transition: opacity .3s,
+   transform .3s,
+   visibility 0s 1s;
+    transition: opacity .3s,
+   transform .3s,
+   visibility 0s 1s,
+   -webkit-transform .3s;
+  }
+  
+  .tap-target {
+    position: absolute;
+    align-items: flex-start;
+    font-size: 1rem;
+    border-radius: 50%;
+    background-color: #eceff1;
+    -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+  .tap-target-content {
+    position: relative;
+    display: table-cell;
+  }
+  
+  .tap-target-wave {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10001;
+  }
+  
+  .tap-target-wave::before, .tap-target-wave::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #eceff1
+  
+  ;
+  }
+  
+  .tap-target-wave::before {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  
+  .tap-target-wave::after {
+    visibility: hidden;
+    -webkit-transition: opacity .3s,
+   visibility 0s,
+   -webkit-transform .3s;
+    transition: opacity .3s,
+   visibility 0s,
+   -webkit-transform .3s;
+    transition: opacity .3s,
+   transform .3s,
+   visibility 0s;
+    transition: opacity .3s,
+   transform .3s,
+   visibility 0s,
+   -webkit-transform .3s;
+    z-index: -1;
+  }
+  
+  .tap-target-origin {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 10002;
+    position: absolute !important;
+  }
+  
+  .tap-target-origin:not(.btn):not(.btn-large), .tap-target-origin:not(.btn):not(.btn-large):hover {
+    background: none;
+  }
+
+  
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  
+  .carousel.carousel-slider {
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel.carousel-slider .carousel-fixed-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 1;
+  }
+  
+  .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 68px;
+  }
+  
+  .carousel.carousel-slider .carousel-item {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel.carousel-slider .carousel-item h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  
+  .carousel.carousel-slider .carousel-item p {
+    font-size: 15px;
+  }
+  
+  .carousel .carousel-item {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel .carousel-item > img {
+    width: 100%;
+  }
+  
+  .carousel .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  
+  .carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%;
+  }
+  
+  .carousel .indicators .indicator-item.active {
+    background-color: #fff;
+  }
+  
+  .carousel.scrolling .carousel-item .materialboxed,
+  .carousel .carousel-item:not(.active) .materialboxed {
+    pointer-events: none;
+  }
+
+  .materialboxed {
+    display: block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .materialboxed:hover:not(.active) {
+    opacity: .8;
+  }
+  
+  .materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
+  
+  #materialbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: 1000;
+    will-change: opacity;
+  }
+  
+  .materialbox-caption {
+    position: fixed;
+    display: none;
+    color: #fff;
+    line-height: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0% 15%;
+    height: 50px;
+    z-index: 1000;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 1400px;
+  }
+  
+  .parallax-container .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .parallax-container .parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  .pin-top, .pin-bottom {
+    position: relative;
+  }
+  
+  .pinned {
+    position: fixed !important;
+  }
+
+  nav .button-collapse {
+    float: left;
+    position: relative;
+    z-index: 1;
+    height: 56px;
+    margin: 0 18px;
+  }
+        
+
+  
+/*!
+ * Waves v0.6.0
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
+ */
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+  
+  .waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    pointer-events: none;
+  }
+
+  .waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+  
+  .btn-floating,
+  .btn-large,
+  .btn-flat {
+    font-size: 1rem;
+    outline: 0;
+  }    
+  
+  .pulse {
+    overflow: initial;
+    position: relative;
+  }
+  
+  .pulse::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    z-index: -1;
+  }
+  
+  .green.lighten-1 {
+    background-color: #66BB6A !important;
+  }
+
+  .green {
+    background-color: #4CAF50 !important;
+  }  
