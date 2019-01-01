@@ -1,61 +1,23 @@
-<section id="meetups-prev-nearest" class="portfolio">
+<section id="meetups-prev" class="call-to-action bg-primary">
     <div class="container">
       <div class="row">
-            <div class="col col-9">
-                    {% for post in site.meetings %}
-                      <div class="col col-{{post.width}}">
-                        <div class="block {{post.color}}">
-                            <div class="block-body height-{{post.height}}">
-                                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
-                
-                                <h2>
-                                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                                </h2>
-                            </div>
-                        </div>
-                      </div>
-                    {% endfor %}
-                    </div>
-      <!--   <div class="col-lg-10 col-lg-offset-1 text-center">
-          <h2>Poprzednie spotkania</h2>
-          <hr class="small">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                </a>
-              </div>
-            </div>
-          </div>
-           /.row (nested) 
-          <a href="#" class="btn btn-dark">View More Items</a>
-        </div>
-    -->
-               <!-- /.col-lg-10 -->
+          <div class="clearfix">
+              {% for post in site.posts  %}
+        
+                {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
+                <div class="event-sqaure" >
 
-        <!-- /.col-lg-10 -->
+                  <a href="{{ post.redirectto }}">
+                    
+                    <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
+                    <div class='event-square-overlay'></div> 
+                  </a>
+                </div>
+        
+              {% endfor %}
+            </div>
+            <div class="clearfix">
+
       </div>
       <!-- /.row -->
     </div>
