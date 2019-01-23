@@ -1,11 +1,10 @@
-<section id="next-meeting">
 
 <aside class="call-to-action bg-primary">
     <div class="container">
         <div class="row text-center">
             <h2>Najbliższe spotkanie:</h2>
             <hr class="small">
-            <h2>ŚGMS#21: Warsztaty z CosmosDB</h2>
+            <h2>ŚGMS#20: Serverless HDD & Time-consuming operations in web apps</h2>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -21,38 +20,28 @@
          
         </div> -->
         <div class="row portfolio-item">
-            <h2><b>Michał Jankowski</b></h2>
-            <h4>CosmosDB</h4>
+            <h2><b>Grzegorz Piotrowski</b></h2>
+            <h4>Serverless - Hype Driven Development</h4>
             <br />
-            TBA<br />
+            Pojęcie "serverless" słychać już od jakiegoś czasu w naszym programistycznym świecie, a hype wokół niego zdaje się tylko rosnąć. Czy jest to kolejny krok w kierunku ewolucji tworzenia oprogramowania czy tylko ciekawostka, która wkrótce przeminie? Jak wygląda codzienna praca w takim podejściu oraz na co należy zwracać szczególną uwagę?
+            <br />  No i najważniejsze - do czego można tak naprawdę stosować serverless oraz jak nie dać się zgubnie ponieść fali tego rosnącego trendu?
+            <br />  Na te oraz inne pytania odpowiemy sobie w trakcie niniejszej prelekcji - jesteście gotowi?
+            <br />
         </div>
         <div class="row">
             <div class="col-md-2">
                 <div class="portfolio-item">
-                    <a href="../img/speaker/michal-jankowski.jpg">
-                        <img class="img-portfolio img-responsive" src="../img/speaker/michal-jankowski.jpg">
+                    <a href="../img/speaker/Grzegorz-Piotrowski.jpg">
+                        <img class="img-portfolio img-responsive" src="../img/speaker/Grzegorz-Piotrowski.jpg">
                     </a>
                 </div>
             </div>
             <div class="col-md-7">
                 O mnie:<br />
-                estem wysoko zmotywowaną osobą, która lubi rozwiązywać trudne problemy. Umiejętności techniczne poparte są wszechstronnym wykształceniem – informatycznym oraz ekonomicznym.
-                <br />
-
-Moim głównym obszarem zainteresowania jest technologia .net. Pracę z nią rozpocząłem od wersji 1.1. Z biegiem lat zmieniały się moje zainteresowania zawodowe. Pracę rozpocząłem od wytwarzania aplikacjach desktopowych (WPF / WinForms), następnie zacząłem przygodę z wytwarzaniem aplikacji mobilnych (Windows Phone / Windows 8). Aplikacje stworzone przeze mnie na platformę Windows Phone są jednymi z najlepiej ocenianych. Obecnie specjalizuję się w wytwarzaniu aplikacji internetowych.
-<br />
-
-Dodatkowym moim autem jest umiejętność zarządzania zespołem. Zawsze dążę do tego, aby zespół osiągnął założone cele.
-<br />
-
-W wolnym czasie podnoszę swoje kwalifikację tworząc różnego rodzaju aplikacje oraz prowadząc bloga związanego z technologią .net.
-<br />
-
-Oprócz tego jestem miłośnikiem podróży oraz fotografii.
+                Programista, szkoleniowiec, pasjonat nowych technologii, miłośnik platformy .NET. Uwielbia przekazywać swoją wiedzę. Wcześniej, jako Microsoft Student Partner, aktywnie udzielał się w środowiskach akademickich prowadząc liczne warsztaty i wykłady, teraz robi to samo dla profesjonalistów IT. Organizator hackathonu PiastCode oraz konferencji PiastConf. Wolny czas lubi spędzać przy grach planszowych.
                  <br />
             </div>
         </div>
-        <!-- 
         <div class="row portfolio-item ">
             <h2>
                 Wojciech Kempa
@@ -80,9 +69,8 @@ Oprócz tego jestem miłośnikiem podróży oraz fotografii.
                   <br />
                 <br />
             </div>
-        </div> -->
+        </div>
 
     </div>
 
 </aside>
-</section>
